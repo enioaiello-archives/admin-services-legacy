@@ -1,5 +1,57 @@
+@media (max-width: 768px) {
+    .containerMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 100vh;
+
+        margin: 2vh 2vw;
+    }
+
+    .head {
+        width: 100%;
+        margin: 2vh 0;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .articleContain {
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .articleContain article {
+        width: 100%;
+
+        text-align: center;
+
+        background-color: var(--white);
+
+        padding: 1%;
+    }
+
+    .articleContain article:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     .articleContain article {
-        background-color: var(--black-bg);
+        background-color: var(--black);
     }
 }
