@@ -26,11 +26,18 @@ main {
 @media (max-width: 768px) {
     main {
         flex-direction: column;
+        align-items: center;
     }
 
     #profilePictureDiv {
         width: 100%;
         text-align: center;
+        max-width: 300px;
+    }
+
+    #profilePicture {
+        width: 60%;
+        max-width: 200px;
     }
 
     #settingsDiv {
