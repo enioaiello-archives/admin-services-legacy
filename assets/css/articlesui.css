@@ -250,8 +250,51 @@ article:hover {
 }
 
 @media (max-width: 768px) {
+    header nav {
+        width: 90%;
+        flex-direction: row;
+        padding: 4% 0;
+    }
+
+    #brandIcon {
+        height: 35px;
+    }
+
+    #navItems li {
+        margin: 0 5px;
+    }
+
+    #navItems li a {
+        font-size: 1em;
+    }
+
+    main {
+        width: 90%;
+    }
+
     article {
         width: 100%;
+    }
+
+    .button.semi {
+        width: 100%;
+    }
+
+    article > .buttons {
+        flex-direction: column;
+    }
+
+    article > .buttons .button {
+        width: 100%;
+    }
+
+    #selectElements form {
+        flex-direction: column;
+    }
+
+    #profilePicture {
+        width: 50%;
+        margin: 2vh 0;
     }
 }
 
@@ -288,19 +331,7 @@ article > .buttons {
 }
 
 @media (max-width: 768px) {
-    .container {
-        display: none;
-    }
-
-    .containerMobile {
-        display: block;
-
-        article {
-            width: 100%;
-            padding: 0;
-            background-color: var(--white);
-        }
-    }
+    
 }
 
 @media (min-width: 1200px) {
