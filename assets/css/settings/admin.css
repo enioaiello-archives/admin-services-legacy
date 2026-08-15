@@ -24,11 +24,13 @@ main {
 @media (max-width: 768px) {
     main {
         flex-direction: column;
+        align-items: center;
     }
 
     #about {
         width: 100%;
         text-align: center;
+        max-width: 300px;
     }
 
     #settingsDiv {
