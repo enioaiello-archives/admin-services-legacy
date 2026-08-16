@@ -1,4 +1,4 @@
-let version = '10.4.0';
+let version = '10.5.0';
 let bootMessage = document.querySelector("#message");
 
 function init() {
