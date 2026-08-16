@@ -11,372 +11,351 @@
     <link rel="stylesheet" href="../assets/css/articlesui.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a id="brand" href="panel.html">
-                <img src="../assets/img/logo.png" alt="Logo Admin Services" id="brandIcon">
-            </a>
-            <ul id="navItems">
-                <li>
-                    <a href="#" title="Retour" id="backPage"><i class="ri-arrow-left-line"></i></a>
-                </li>
-                <li>
-                    <div id="logoutChamp">
-                        <a href="#" id="logout">
-                            <img src="#" alt="Photo de profil" id="pfpLogout">
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="panel">
-            <h1 id="welcomeText"></h1>
-            <div id="recommandes">
-                <h2>Accueil</h2>
-                <div class="articleContain">
-                    <article>
-                        <h3>Paramètres de l'accueil</h3>
-                        <div class="details none">
-                            <p>Modifiez les paramètres de l'accueil.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="../views/settings/panel.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Applications</h3>
-                        <div class="details none">
-                            <p>Accédez à la bibliothèque d'applications.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="applications/apps.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Annonces</h3>
-                        <div class="details none">
-                            <p>Accédez à la liste des annonces.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="announcements/announcements.html" class="button semi"
-                                style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Support</h3>
-                        <div class="details none">
-                            <p>Accédez au support pour obtenir de l'aide.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="support/support.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Astuces</h3>
-                        <div class="details none">
-                            <p>Accédez à la liste des astuces.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="applications/hints.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
+<header>
+    <nav>
+        <a id="brand" href="panel.html">
+            <img src="../assets/img/logo.png" alt="Logo Admin Services" id="brandIcon">
+        </a>
+        <ul id="navItems">
+            <li>
+                <a href="#" title="Retour" id="backPage"><i class="ri-arrow-left-line"></i></a>
+            </li>
+            <li>
+                <div id="logoutChamp">
+                    <a href="#" id="logout">
+                        <img src="#" alt="Photo de profil" id="pfpLogout">
+                    </a>
                 </div>
-            </div>
-            <div id="applications">
-                <h2>Applications</h2>
-                <div class="articleContain">
-                    <article>
-                        <h3>Paramètres</h3>
-                        <div class="details none">
-                            <p>Modifiez les paramètres.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="applications/settings.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Support</h3>
-                        <div class="details none">
-                            <p>Obtenez tout le support nécessaire.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="support/support.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Centre de sécurité</h3>
-                        <div class="details none">
-                            <p>Consultez les suggestions de sécurité pour votre compte.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="applications/security.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Astuces</h3>
-                        <div class="details none">
-                            <p>Apprenez à utiliser le service.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="applications/hints.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>Toutes les applications</h3>
-                        <div class="details none">
-                            <p>Accédez à la bibliothèque d'applications.</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="applications/apps.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                    <article id="devMode">
-                        <h3>Panneau de développement</h3>
-                        <div class="details none">
-                            <p>Accédez aux outils de développement pour vos applications et bien d'autres !</p>
-                        </div>
-                        <div class="buttons">
-                            <a href="applications/developer.html" class="button semi" style="width: 84%;">Consulter</a>
-                            <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                                title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-        <div id="widgets">
-            <h2>Widgets</h2>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="panel">
+        <h1 id="welcomeText"></h1>
+        <div id="recommandes">
+            <h2>Accueil</h2>
             <div class="articleContain">
                 <article>
-                    <h3>Calendrier</h3>
-                    <p id="dateTime">Patientez...</p>
-                </article>
-                <article>
-                    <h3>Météo</h3>
-                    <p id="weather">Patientez...</p>
-                </article>
-                <article id="notificationWidget">
-                    <h3>Notifications</h3>
-                    <ul id="notificationList">
-                        <p>Aucune notification pour l'instant.</p>
-                    </ul>
-                    <a href="./notifications.html" id="moreNotifications" class="button second">Toutes les
-                        notifications</a>
-                </article>
-            </div>
-        </div>
-        <div id="services">
-            <h2>Services</h2>
-            <div class="articleContain">
-                <article>
-                    <h3>Miwa.lol</h3>
+                    <h3>Paramètres de l'accueil</h3>
                     <div class="details none">
-                        <p>Miwa.lol est un site de biographies sociales.</p>
+                        <p>Modifiez les paramètres de l'accueil.</p>
                     </div>
                     <div class="buttons">
-                        <a href="https://miwa.lol/" target="_blank" class="button semi"
-                            style="width: 84%;">Consulter</a>
+                        <a href="../views/settings/panel.html" class="button semi" style="width: 84%;">Consulter</a>
                         <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div id="annonces">
-            <h2>Annonces</h2>
-            <div class="articleContain">
-                <article>
-                    <h3>Futur du service</h3>
-                    <div class="details none">
-                        <p>En savoir plus sur l'avenir du service.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="announcements/future-of-service.html" class="button semi"
-                            style="width: 84%;">Consulter</a>
-                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
                     </div>
                 </article>
                 <article>
-                    <h3>Nouveau support</h3>
+                    <h3>Applications</h3>
                     <div class="details none">
-                        <p>Obtenez plus d'informations sur notre nouveau support.</p>
+                        <p>Accédez à la bibliothèque d'applications.</p>
                     </div>
                     <div class="buttons">
-                        <a href="announcements/new-support.html" class="button semi" style="width: 84%;">Consulter</a>
+                        <a href="applications/apps.html" class="button semi" style="width: 84%;">Consulter</a>
                         <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
                     </div>
                 </article>
                 <article>
-                    <h3>Voir toutes les annonces</h3>
+                    <h3>Annonces</h3>
                     <div class="details none">
-                        <p>Affichez toutes les annonces du service.</p>
+                        <p>Accédez à la liste des annonces.</p>
                     </div>
                     <div class="buttons">
-                        <a href="announcements/announcements.html" class="button semi" style="width: 84%;">Consulter</a>
+                        <a href="announcements/announcements.html" class="button semi"
+                           style="width: 84%;">Consulter</a>
                         <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div id="support">
-            <h2>Support</h2>
-            <div class="articleContain">
-                <article>
-                    <h3>Rester à jour</h3>
-                    <div class="details none">
-                        <p>Obtenez les dernières informations sur <strong>Admin Services</strong>.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="support/category/updates.html" class="button semi" style="width: 84%;">Consulter</a>
-                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
                     </div>
                 </article>
                 <article>
-                    <h3>Prise en charge</h3>
+                    <h3>Support</h3>
                     <div class="details none">
-                        <p>Preparez-vous a la fin de prise en charge d'Admin Services 11 et au passage a Admin Services 12.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="support/category/eol.html" class="button semi" style="width: 84%;">Consulter</a>
-                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                    </div>
-                </article>
-                <!-- <article>
-                    <h3>Système de compte</h3>
-                    <div class="details none">
-                        <p>Obtenez de l'aide pour des paramètres liés à votre compte.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="support/category/account.html" class="button semi" style="width: 84%;">Consulter</a>
-                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                    </div>
-                </article>
-                <article>
-                    <h3>Outils de développement</h3>
-                    <div class="details none">
-                        <p>Obtenez de l'aide pour des paramètres liés à votre compte.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="support/category/dev.html" class="button semi" style="width: 84%;">Consulter</a>
-                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                    </div>
-                </article> -->
-                <article>
-                    <h3>Tous les supports</h3>
-                    <div class="details none">
-                        <p>Obtenez toute forme d'aide depuis les pages de support.</p>
+                        <p>Accédez au support pour obtenir de l'aide.</p>
                     </div>
                     <div class="buttons">
                         <a href="support/support.html" class="button semi" style="width: 84%;">Consulter</a>
                         <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div id="hints">
-            <h2>Astuces</h2>
-            <div class="articleContain">
-                <article>
-                    <h3>Personnalisation</h3>
-                    <div class="details none">
-                        <p>Découvrez comment personnaliser <strong>Admin Services</strong>.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="hints/personalisation.html" class="button semi" style="width: 84%;">Lire</a>
-                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
                     </div>
                 </article>
                 <article>
-                    <h3>Outils de développement</h3>
+                    <h3>Astuces</h3>
                     <div class="details none">
-                        <p>Découvrez comment utiliser les outils de développement.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="hints/dev.html" class="button semi" style="width: 84%;">Lire</a>
-                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                    </div>
-                </article>
-                <article>
-                    <h3>Paramètres</h3>
-                    <div class="details none">
-                        <p>Découvrez comment modifier <strong>Admin Services</strong>.</p>
-                    </div>
-                    <div class="buttons">
-                        <a href="hints/settings.html" class="button semi" style="width: 84%;">Lire</a>
-                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
-                    </div>
-                </article>
-                <article>
-                    <h3>Toutes les astuces</h3>
-                    <div class="details none">
-                        <p>Consultez la liste des astuces.</p>
+                        <p>Accédez à la liste des astuces.</p>
                     </div>
                     <div class="buttons">
                         <a href="applications/hints.html" class="button semi" style="width: 84%;">Consulter</a>
                         <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
-                            title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
                     </div>
                 </article>
             </div>
         </div>
-        <div id="selectElements">
-            <form>
-                <label>
-                    <input type="checkbox" class="checkbox" data-target="recommandes" checked> Accueil
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox" data-target="widgets" checked> Widgets
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox" data-target="services" checked> Services
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox" data-target="annonces" checked> Annonces
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox" data-target="support" checked> Support
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox" data-target="hints" checked> Astuces
-                </label>
-            </form>
+        <div id="applications">
+            <h2>Applications</h2>
+            <div class="articleContain">
+                <article>
+                    <h3>Paramètres</h3>
+                    <div class="details none">
+                        <p>Modifiez les paramètres.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="applications/settings.html" class="button semi" style="width: 84%;">Consulter</a>
+                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                    </div>
+                </article>
+                <article>
+                    <h3>Support</h3>
+                    <div class="details none">
+                        <p>Obtenez tout le support nécessaire.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="support/support.html" class="button semi" style="width: 84%;">Consulter</a>
+                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                    </div>
+                </article>
+                <article>
+                    <h3>Centre de sécurité</h3>
+                    <div class="details none">
+                        <p>Consultez les suggestions de sécurité pour votre compte.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="applications/security.html" class="button semi" style="width: 84%;">Consulter</a>
+                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                    </div>
+                </article>
+                <article>
+                    <h3>Astuces</h3>
+                    <div class="details none">
+                        <p>Apprenez à utiliser le service.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="applications/hints.html" class="button semi" style="width: 84%;">Consulter</a>
+                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                    </div>
+                </article>
+                <article>
+                    <h3>Toutes les applications</h3>
+                    <div class="details none">
+                        <p>Accédez à la bibliothèque d'applications.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="applications/apps.html" class="button semi" style="width: 84%;">Consulter</a>
+                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                    </div>
+                </article>
+                <article id="devMode">
+                    <h3>Panneau de développement</h3>
+                    <div class="details none">
+                        <p>Accédez aux outils de développement pour vos applications et bien d'autres !</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="applications/developer.html" class="button semi" style="width: 84%;">Consulter</a>
+                        <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                           title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                    </div>
+                </article>
+            </div>
         </div>
-    </main>
-    <script type="text/javascript" src="../assets/js/panel.js"></script>
-    <script type="text/javascript" src="../assets/js/nav.js"></script>
-    <script type="text/javascript" src="../assets/js/basic-functions.js"></script>
+    </div>
+    <div id="widgets">
+        <h2>Widgets</h2>
+        <div class="articleContain">
+            <article>
+                <h3>Calendrier</h3>
+                <p id="dateTime">Patientez...</p>
+            </article>
+            <article>
+                <h3>Météo</h3>
+                <p id="weather">Patientez...</p>
+            </article>
+            <article id="notificationWidget">
+                <h3>Notifications</h3>
+                <ul id="notificationList">
+                    <p>Aucune notification pour l'instant.</p>
+                </ul>
+                <a href="./notifications.html" id="moreNotifications" class="button second">Toutes les
+                    notifications</a>
+            </article>
+        </div>
+    </div>
+    <div id="services">
+        <h2>Services</h2>
+        <div class="articleContain">
+            <article>
+                <h3>Miwa.lol</h3>
+                <div class="details none">
+                    <p>Miwa.lol est un site de biographies sociales.</p>
+                </div>
+                <div class="buttons">
+                    <a href="https://miwa.lol/" target="_blank" class="button semi"
+                       style="width: 84%;">Consulter</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="annonces">
+        <h2>Annonces</h2>
+        <div class="articleContain">
+            <article>
+                <h3>Futur du service</h3>
+                <div class="details none">
+                    <p>En savoir plus sur l'avenir du service.</p>
+                </div>
+                <div class="buttons">
+                    <a href="announcements/future-of-service.html" class="button semi"
+                       style="width: 84%;">Consulter</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+            <article>
+                <h3>Nouveau support</h3>
+                <div class="details none">
+                    <p>Obtenez plus d'informations sur notre nouveau support.</p>
+                </div>
+                <div class="buttons">
+                    <a href="announcements/new-support.html" class="button semi" style="width: 84%;">Consulter</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+            <article>
+                <h3>Voir toutes les annonces</h3>
+                <div class="details none">
+                    <p>Affichez toutes les annonces du service.</p>
+                </div>
+                <div class="buttons">
+                    <a href="announcements/announcements.html" class="button semi" style="width: 84%;">Consulter</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="support">
+        <h2>Support</h2>
+        <div class="articleContain">
+            <article>
+                <h3>Rester à jour</h3>
+                <div class="details none">
+                    <p>Obtenez les dernières informations sur <strong>Admin Services</strong>.</p>
+                </div>
+                <div class="buttons">
+                    <a href="support/category/updates.html" class="button semi" style="width: 84%;">Consulter</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+            <article>
+                <h3>Prise en charge</h3>
+                <div class="details none">
+                    <p>Préparez-vous à la fin de prise en charge d'Admin Services 10 et au passage à Admin Services
+                        11.</p>
+                </div>
+                <div class="buttons">
+                    <a href="support/category/eol.html" class="button semi" style="width: 84%;">Consulter</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+            <article>
+                <h3>Tous les supports</h3>
+                <div class="details none">
+                    <p>Obtenez toute forme d'aide depuis les pages de support.</p>
+                </div>
+                <div class="buttons">
+                    <a href="support/support.html" class="button semi" style="width: 84%;">Consulter</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="hints">
+        <h2>Astuces</h2>
+        <div class="articleContain">
+            <article>
+                <h3>Personnalisation</h3>
+                <div class="details none">
+                    <p>Découvrez comment personnaliser <strong>Admin Services</strong>.</p>
+                </div>
+                <div class="buttons">
+                    <a href="hints/personalisation.html" class="button semi" style="width: 84%;">Lire</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+            <article>
+                <h3>Outils de développement</h3>
+                <div class="details none">
+                    <p>Découvrez comment utiliser les outils de développement.</p>
+                </div>
+                <div class="buttons">
+                    <a href="hints/dev.html" class="button semi" style="width: 84%;">Lire</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+            <article>
+                <h3>Paramètres</h3>
+                <div class="details none">
+                    <p>Découvrez comment modifier <strong>Admin Services</strong>.</p>
+                </div>
+                <div class="buttons">
+                    <a href="hints/settings.html" class="button semi" style="width: 84%;">Lire</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+            <article>
+                <h3>Toutes les astuces</h3>
+                <div class="details none">
+                    <p>Consultez la liste des astuces.</p>
+                </div>
+                <div class="buttons">
+                    <a href="applications/hints.html" class="button semi" style="width: 84%;">Consulter</a>
+                    <a onclick="toggleDetails(this)" class="button semi" style="width: 15%;"
+                       title="Obtenir des informations"><i class="ri-information-line"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="selectElements">
+        <form>
+            <label>
+                <input type="checkbox" class="checkbox" data-target="recommandes" checked> Accueil
+            </label>
+            <label>
+                <input type="checkbox" class="checkbox" data-target="widgets" checked> Widgets
+            </label>
+            <label>
+                <input type="checkbox" class="checkbox" data-target="services" checked> Services
+            </label>
+            <label>
+                <input type="checkbox" class="checkbox" data-target="annonces" checked> Annonces
+            </label>
+            <label>
+                <input type="checkbox" class="checkbox" data-target="support" checked> Support
+            </label>
+            <label>
+                <input type="checkbox" class="checkbox" data-target="hints" checked> Astuces
+            </label>
+        </form>
+    </div>
+</main>
+<script type="text/javascript" src="../assets/js/panel.js"></script>
+<script type="text/javascript" src="../assets/js/nav.js"></script>
+<script type="text/javascript" src="../assets/js/basic-functions.js"></script>
 </body>
 </html>
