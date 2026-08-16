@@ -7,13 +7,6 @@ let showBordersButton = document.querySelector("#showBorders");
 
 document.querySelector("#update").innerHTML = localStorage.getItem('version');
 
-// Fonction pour vérifier si l'utilisateur est connecté
-function logged() {
-    if (!username) {
-        // Code à exécuter si l'utilisateur n'est pas connecté
-    }
-}
-
 // Fonction pour charger les informations de l'utilisateur
 function loadUserInfo() {
     // Sélectionne l'élément avec l'ID "username"
