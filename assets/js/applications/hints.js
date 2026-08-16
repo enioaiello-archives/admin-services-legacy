@@ -7,11 +7,6 @@ let articles = [
         "link": "../hints/personalisation.html"
     },
     {
-        "title": "Fast-reconnect",
-        "description": "Découvrez ce nouveau système de connexion rapide !",
-        "link": "../hints/fast-login.html"
-    },
-    {
         "title": "Paramètres",
         "description": "Apprenez à paramétrer correctement Admin Services.",
         "link": "../hints/settings.html"
