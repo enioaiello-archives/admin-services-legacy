@@ -71,7 +71,7 @@ function resetStartup() {
 }
 
 function startAdminUtility() {
-    window.location.href = "https://enioaiello.github.io/admin-utility"; // Rediriger vers l'utilitaire d'administration
+    window.location.href = "https://enioaiello-archives.github.io/admin-utility"; // Rediriger vers l'utilitaire d'administration
 }
 
 function downloadUpdate() {

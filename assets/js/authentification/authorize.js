@@ -23,7 +23,7 @@ function init() {
     const appIndicationElement = document.querySelector('#app-indication');
 
     if (!username) {
-        window.location.href = 'https://enioaiello.github.io/admin-services-legacy/';
+        window.location.href = 'https://enioaiello-archives.github.io/admin-services-legacy/';
         return;
     }
 
@@ -52,7 +52,7 @@ function init() {
 
 document.querySelector('#app-refuse').addEventListener('click', () => {
     localStorage.removeItem('app');
-    window.location.href = 'https://enioaiello.github.io/admin-services-legacy/';
+    window.location.href = 'https://enioaiello-archives.github.io/admin-services-legacy/';
 });
 
 init();

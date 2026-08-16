@@ -17,11 +17,11 @@ let usernameText = document.querySelector("#username");
 function check() {
     if (!username || !password || !pfp) {
         // Rediriger vers une autre page si les valeurs sont manquantes
-        window.location.href = 'https://enioaiello.github.io/admin-services-legacy/';
+        window.location.href = 'https://enioaiello-archives.github.io/admin-services-legacy/';
     }
 
     if (localStorage.getItem('fast-reconnect') === 'false') {
-        window.location.href = 'https://enioaiello.github.io/admin-services-legacy/';
+        window.location.href = 'https://enioaiello-archives.github.io/admin-services-legacy/';
     }
 
     // Afficher le nom d'utilisateur et l'image de profil
