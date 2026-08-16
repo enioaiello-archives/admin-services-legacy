@@ -15,19 +15,8 @@ function logout() {
     // Affiche une boîte de dialogue de confirmation
     let result = confirm("Êtes-vous sûr de vous déconnecter ?");
     if (result) {
-        if (localStorage.getItem("sound") === "true") {
-            // Joue le son de déconnexion
-            let audio = new Audio("../../assets/sound/logoff.mp3");
-            audio.play();
-            setTimeout(() => {
-                audio.pause();
-                // Redirige vers la page de déconnexion si l'utilisateur confirme
-                window.location.href = "https://enioaiello.github.io/admin-services-legacy/";
-            }, 4000);
-        } else {
-            // Redirige vers la page de déconnexion si l'utilisateur confirme
-            window.location.href = "https://enioaiello.github.io/admin-services-legacy/";
-        }
+        // Redirige vers la page de déconnexion si l'utilisateur confirme
+        window.location.href = "https://enioaiello-archives.github.io/admin-services-legacy/";
     }
 }
 
