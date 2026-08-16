@@ -17,15 +17,15 @@ function changePassword(e) {
     // Vérification si tous les champs sont remplis
     if (oldPasswordValue === "" || newPasswordValue === "" || repeatPasswordValue === "") {
         errorField.textContent = "Veuillez remplir tous les champs";
-    } 
+    }
     // Vérification si l'ancien mot de passe est correct
     else if (oldPasswordValue !== localStorage.getItem("password")) {
         errorField.textContent = "Ancien mot de passe incorrect";
-    } 
+    }
     // Vérification si les nouveaux mots de passe correspondent
     else if (newPasswordValue !== repeatPasswordValue) {
         errorField.textContent = "Les mots de passe ne correspondent pas";
-    } 
+    }
     // Si toutes les vérifications passent, le mot de passe est changé
     else {
         localStorage.setItem("password", newPasswordValue);

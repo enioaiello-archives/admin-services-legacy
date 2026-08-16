@@ -1,16 +1,64 @@
 const images = [
-    { name: "Arbres autonome", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-4.jpg", category: "nature" },
-    { name: "Vieille grande roue", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-3.jpg", category: "city" },
-    { name: "Feu sur forêt nocturne", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-9.jpg", category: "night" },
-    { name: "Village de montagne", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-2.jpg", category: "nature" },
-    { name: "Coucher de soleil sur montagnes", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-8.jpg", category: "nature" },
-    { name: "Montagnes enneigée de nuit", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-6.jpg", category: "night" },
-    { name: "Mer translucide", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-7.jpg", category: "nature" },
-    { name: "Forêt sur montagne", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-5.jpg", category: "nature" },
-    { name: "Forêt sur montagne", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-11.jpg", category: "abstract" },
-    { name: "Forêt sur montagne", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-12.jpg", category: "abstract" },
-    { name: "Bleu par défaut", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-10.jpg", category: "as" },
-    { name: "Maisons colorées", link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-1.jpg", category: "city" }
+    {
+        name: "Arbres autonome",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-4.jpg",
+        category: "nature"
+    },
+    {
+        name: "Vieille grande roue",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-3.jpg",
+        category: "city"
+    },
+    {
+        name: "Feu sur forêt nocturne",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-9.jpg",
+        category: "night"
+    },
+    {
+        name: "Village de montagne",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-2.jpg",
+        category: "nature"
+    },
+    {
+        name: "Coucher de soleil sur montagnes",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-8.jpg",
+        category: "nature"
+    },
+    {
+        name: "Montagnes enneigée de nuit",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-6.jpg",
+        category: "night"
+    },
+    {
+        name: "Mer translucide",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-7.jpg",
+        category: "nature"
+    },
+    {
+        name: "Forêt sur montagne",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-5.jpg",
+        category: "nature"
+    },
+    {
+        name: "Forêt sur montagne",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-11.jpg",
+        category: "abstract"
+    },
+    {
+        name: "Forêt sur montagne",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-12.jpg",
+        category: "abstract"
+    },
+    {
+        name: "Bleu par défaut",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-10.jpg",
+        category: "as"
+    },
+    {
+        name: "Maisons colorées",
+        link: "https://enioaiello-archives.github.io/admin-services-legacy/assets/img/background/background-1.jpg",
+        category: "city"
+    }
 ];
 
 const background = document.querySelector("#background");

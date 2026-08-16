@@ -7,7 +7,7 @@ if (devMode === 'true') {
     devModeSettings.innerHTML = 'Activer';
 }
 
-devModeSettings.addEventListener('click', function() {
+devModeSettings.addEventListener('click', function () {
     if (devMode === 'true') {
         devModeSettings.innerHTML = 'Activer';
         localStorage.setItem('devMode', 'false');

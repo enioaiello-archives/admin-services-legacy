@@ -25,7 +25,7 @@ function check() {
     }
 
     // Afficher le nom d'utilisateur et l'image de profil
-    document.getElementById('username').innerHTML =  "Bienvenue, " + username;
+    document.getElementById('username').innerHTML = "Bienvenue, " + username;
     document.getElementById('profilePicture').src = pfp;
 }
 

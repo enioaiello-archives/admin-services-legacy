@@ -18,7 +18,7 @@ function changePdp() {
         // Stocke l'URL de la photo de profil saisie par l'utilisateur dans le stockage local
         localStorage.setItem("pfp", userPdp);
         profilePicture.src = localStorage.getItem("pfp");
-        
+
         // Affiche un message dans la console indiquant que la photo de profil a été modifiée avec succès
         console.log("Photo de profil modifiée avec succès !");
     }

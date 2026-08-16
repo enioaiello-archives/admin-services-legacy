@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fonction pour afficher les erreurs de géolocalisation
     function showError(error) {
-        switch(error.code) {
+        switch (error.code) {
             case error.PERMISSION_DENIED:
                 weatherDiv.innerHTML = "L'utilisateur a refusé la demande de géolocalisation.";
                 break;
