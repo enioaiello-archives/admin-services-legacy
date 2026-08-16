@@ -7,7 +7,7 @@ let pfp = localStorage.getItem("pfp");
 // Fonction pour charger l'image de profil
 function loadImage() {
     // Définit la source de l'image de déconnexion avec l'image de profil récupérée
-    pfpLogout.src = pfp && pfp.trim() !== "" ? pfp : "https://enioaiello.github.io/admin-services-legacy/assets/img/users/empty.jpg";
+    pfpLogout.src = pfp && pfp.trim() !== "" ? pfp : "https://enioaiello.github.io/admin-services-legacy/assets/img/users/default.jpg";
 }
 
 // Fonction pour se déconnecter
