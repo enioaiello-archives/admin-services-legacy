@@ -40,15 +40,6 @@ Accédez à la version Web d'**Admin Services (legacy)** en cliquant sur le lien
 - **Respect de la vie privée** : Toutes vos données sont stockées localement.
 - **Simplicité d'utilisation** : Pas de dépendance à des serveurs externes.
 
-## Outils de développement
-
-Un [SDK](assets/files/sdk.zip) est disponible pour les développeurs souhaitant créer des applications intégrables dans la bibliothèque de l'application.
-
-> [!TIP]  
-> Consultez la documentation incluse dans le SDK pour une meilleure intégration de votre application.
-
-Pour publier votre application, envoyez-la à l'équipe de développement pour une vérification de sécurité et un ajout à la bibliothèque.
-
 ## Fonctionnalités
 
 - **Connexion et inscription.**
